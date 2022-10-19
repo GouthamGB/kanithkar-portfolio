@@ -1,0 +1,23 @@
+.skills-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills{
+    width: 70%;
+    max-width: 1080px;
+}
+
+.skill-grid{
+    display: grid;
+    grid-template-columns: repeat(5, 90px);
+    grid-gap: 10px;
+}
+
+
+.skill-grid img{
+    width: 80px;
+    height: 80px;
+}

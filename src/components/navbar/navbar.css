@@ -1,0 +1,30 @@
+.nav-container{
+    width: 100%;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav{
+    width: 70%;
+    max-width: 1080px;
+    display: flex;
+    
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    width: 40%;
+}
+
+.menu-items a {
+    text-decoration: none;
+    list-style: none;
+    color: rgba(0, 0, 0, 0.493);
+}

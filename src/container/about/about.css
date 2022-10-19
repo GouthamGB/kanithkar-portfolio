@@ -1,0 +1,15 @@
+.about-container{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.about{
+    width: 70%;
+    max-width: 1080px;
+    display: flex;
+
+}
