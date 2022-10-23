@@ -47,43 +47,51 @@ function Contact() {
   return (
     <div className='contact' id='contact'>
     <div className='contact-container'>
-      <h1>Contact</h1>
+      
 
 
     <div className='form-container'>
-
-      <div className="address">
-
-      </div>
+      <h1>Contact</h1>
+      <p>
+        Feel free to Contact me by submitting the form below and I will get back to you as soon as possible
+      </p>
 
 
       <div className='form-section'>
         <Formik initialValues={initialValues} onSubmit={onSubmit} validationSchema={validationSchema}>
         <Form ref={form}>
+
+          <div className='form-input'>
           <label htmlFor="name">Name</label>
-          <Field type="text" id='name' name='name'/>
+          <Field type="text" id='name' name='name'  placeholder="Enter Your Name" />
           <ErrorMessage name='name'/>
+          </div>
 
+          <div className='form-input'>
           <label htmlFor="email">Email</label>
-          <Field type="email" id='email' name='email'/>
+          <Field type="email" id='email' name='email' placeholder="Enter Your Email"/>
           <ErrorMessage name='email'/>
+          </div>
 
+          <div className='form-input'>
           <label htmlFor="subject">Subject</label>
-          <Field type="text" id='subject' name='subject'/>
+          <Field type="text" id='subject' name='subject' placeholder="Enter the subject"/>
           <ErrorMessage name='subject'/>
-          
-          <Field as="textarea" name="message" rows="4" cols="40"/>
-          <ErrorMessage name='message'/>
+          </div>
 
-          <button type='submit'>Submit</button>
+          <div className='form-input'>
+          <label htmlFor="message">Message</label>
+          <Field as="textarea" name="message" rows="4" cols="40" placeholder="Enter Your Message"/>
+          <ErrorMessage name='message'/>
+          </div>
+          <div className='button-div'>
+          <button type='submit'>SUBMIT</button>
+          </div>
         </Form>
         </Formik>
       </div>
 
-      <div className='social'>
 
-
-      </div>
       </div>
     </div>
     </div>

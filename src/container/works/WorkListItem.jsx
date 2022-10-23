@@ -4,13 +4,17 @@ import {Link} from "react-router-dom"
 import {HiArrowSmRight} from 'react-icons/hi'
 
 
+
+
+
+
 function WorkListItem({work, changeImg}) {
 
   const [arr,setArr] = useState(null)
 
   const setHover = ()=>{
     changeImg(work.imageUrl)
-    setArr(<HiArrowSmRight/>)
+    setArr(<HiArrowSmRight style={{fontSize: "1.5rem"}} />)
   }
 
   const leave = ()=>{
@@ -20,7 +24,7 @@ function WorkListItem({work, changeImg}) {
     
   return (
     <div className='work-one' onMouseOver={setHover} onMouseLeave={leave}>
-                  <Link to={"/works/" + work.title} >
+                  <Link to={"/works/" + work.title} style={{ textDecoration: 'none' }}>
                     <div className='work-map-inner'>
                       <div className='work-map-inner-left'>  
                         {arr}
@@ -31,7 +35,7 @@ function WorkListItem({work, changeImg}) {
                         </div>
                     </div>
                   </Link>
-                  </div>
+    </div>
   )
 }
 

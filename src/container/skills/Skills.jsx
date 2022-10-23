@@ -23,6 +23,8 @@ function Skills() {
 
         <h1>Skills</h1>
 
+        <h2>Tooling</h2>
+
         <div className='skill-grid'>
             {
               skills && skills.map((skill, index)=>(
