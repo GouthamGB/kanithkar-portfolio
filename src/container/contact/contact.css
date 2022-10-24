@@ -5,12 +5,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
+
 }
 
 .contact-container{
-    width: 70%;
+    width: 90%;
     max-width: 1440px;
     display: flex;
+   
     
     
     justify-content: center;

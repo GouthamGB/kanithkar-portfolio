@@ -4,11 +4,14 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-color: white;
 }
 
 .skills{
-    width: 70%;
+    width: 90%;
     max-width: 1440px;
+    display: flex;
+    flex-direction: column
 }
 
 .skill-grid{

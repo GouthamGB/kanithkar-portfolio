@@ -44,7 +44,7 @@ const imgVarient = {
  visible: {
     opacity:1,
     transition: {
-      
+      delay: 2
     }
  },
  exit: {
@@ -81,7 +81,9 @@ function Works() {
 
         <div className='work-main'>
           <div className='work-img'>
-            <motion.img src={img} alt="" onError={i => i.target.style.display='none'} variants={imgVarient} initial='hidden' animate='visible' exit='exit'/>
+            
+            <img src={img} alt="" onError={i => i.target.style.display='none'} />
+            
           </div> 
 
           <div className='work-desc'>

@@ -3,12 +3,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: calc(100vh - 71.83px);
     
     
 }
 .hero{
-    width: 70%;
+    width: 90%;
     max-width: 1440px;
     display: flex;
     justify-content: space-around;
