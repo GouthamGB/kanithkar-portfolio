@@ -60,29 +60,29 @@ function Contact() {
       <div className='form-section'>
         <Formik initialValues={initialValues} onSubmit={onSubmit} validationSchema={validationSchema}>
         <Form ref={form}>
+        <div className='row-one'>
+            <div className='form-input'>
+            <label htmlFor="name">Name</label>
+            <Field type="text" id='name' name='name' />
+            <span className='error'><ErrorMessage name='name' className='error'/></span>
+            </div>
 
-          <div className='form-input'>
-          <label htmlFor="name">Name</label>
-          <Field type="text" id='name' name='name'  placeholder="Enter Your Name" />
-          <ErrorMessage name='name'/>
+            <div className='form-input'>
+            <label htmlFor="email">Email</label>
+            <Field type="email" id='email' name='email'/>
+            <span className='error'><ErrorMessage name='email' className='error'/></span>
+            </div>
           </div>
-
-          <div className='form-input'>
-          <label htmlFor="email">Email</label>
-          <Field type="email" id='email' name='email' placeholder="Enter Your Email"/>
-          <ErrorMessage name='email'/>
-          </div>
-
           <div className='form-input'>
           <label htmlFor="subject">Subject</label>
-          <Field type="text" id='subject' name='subject' placeholder="Enter the subject"/>
-          <ErrorMessage name='subject'/>
+          <Field type="text" id='subject' name='subject'/>
+          <span className='error'></span><ErrorMessage name='subject' className='error'/><span/>
           </div>
 
           <div className='form-input'>
           <label htmlFor="message">Message</label>
-          <Field as="textarea" name="message" rows="4" cols="40" placeholder="Enter Your Message"/>
-          <ErrorMessage name='message'/>
+          <Field as="textarea" name="message" rows="4" cols="40"/>
+          <span className='error'><ErrorMessage name='message' /></span>
           </div>
           <div className='button-div'>
           <button type='submit'>SUBMIT</button>
@@ -93,6 +93,9 @@ function Contact() {
 
 
       </div>
+
+    
+
     </div>
     </div>
   )

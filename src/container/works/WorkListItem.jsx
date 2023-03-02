@@ -16,15 +16,17 @@ function WorkListItem({work, changeImg}) {
     changeImg(work.imageUrl)
     setArr(<HiArrowSmRight style={{fontSize: "1.5rem"}} />)
   }
-
+ 
   const leave = ()=>{
     changeImg(null)
     setArr(null)
   }
+
+
     
   return (
     <div className='work-one' onMouseOver={setHover} onMouseLeave={leave}>
-                  <Link to={"/works/" + work.title} style={{ textDecoration: 'none' }}>
+                  <Link to={"/works/" + work?.slug?.current} style={{ textDecoration: 'none' }}>
                     <div className='work-map-inner'>
                       <div className='work-map-inner-left'>  
                         {arr}

@@ -16,6 +16,15 @@
     justify-content: space-between;
 }
 
+.nav-link{
+    transition: color .2s ease;
+}
+
+.nav-link:hover{
+    color: black;
+    cursor: pointer;
+}
+
 .menu-items{
     display: flex;
     justify-content: space-between;
@@ -28,4 +37,14 @@
     text-decoration: none;
     list-style: none;
     color: rgba(0, 0, 0, 0.493);
+}
+#nav-contact{
+    margin: 0;
+    padding: 0.5rem;
+    height: 2.81rem;
+    line-height: 2.8rem;
+    border-radius: 3px;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
 }

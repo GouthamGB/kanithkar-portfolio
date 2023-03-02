@@ -1,15 +1,23 @@
 import React from 'react'
-
-import {About, Contact, Hero, Skills, Works, SingleWork, } from "../../container"
+import { SideBarLeft,SideBarRight } from '../../components'
+import {About, Contact, Hero, Works, SingleWork, Experience, } from "../../container"
+import { Navbar } from '../../components'
 function Home() {
   return (
-    <div>
+    
+    <>
+      <SideBarLeft/>
+      <div className="app-main">
+      <Navbar/>
      <Hero/>
       <About/>
-      <Skills/>
+      <Experience/>
       <Works/>
       <Contact/> 
-    </div>
+      </div>
+
+      <SideBarRight/>
+    </>
   )
 }
 

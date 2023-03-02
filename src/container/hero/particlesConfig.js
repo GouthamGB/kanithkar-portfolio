@@ -9,7 +9,7 @@ const particlesInit ={
       },
       
     },
-    fpsLimit: 120,
+    fpsLimit: 60,
     interactivity: {
       events: {
         onClick: {
@@ -44,7 +44,7 @@ const particlesInit ={
         width: 1,
       },
       collisions: {
-        enable: true,
+        enable: false,
       },
       move: {
         directions: "none",
@@ -61,7 +61,7 @@ const particlesInit ={
           enable: true,
           area: 800,
         },
-        value: 80,
+        value: 50,
       },
       opacity: {
         value: 0.5,

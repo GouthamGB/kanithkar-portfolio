@@ -9,6 +9,16 @@ export default{
             type: 'string',
         },
         {
+            name: 'slug',
+            title: 'Slug',
+            type: 'slug',
+            options: {
+              source: 'title',
+              maxLength: 96,
+            },
+          }
+        ,
+        {
             name: 'type',
             title: 'Type',
             type: 'string',
@@ -23,6 +33,11 @@ export default{
             name: 'description',
             title: 'Description',
             type: 'blockContent',
+        },
+        {
+            name: 'date',
+            title: 'Date',
+            type: 'string',
         },
         {
             name: 'image',
